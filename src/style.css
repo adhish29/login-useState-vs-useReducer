@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 450px;
+  padding: 15px;
+  border: 1px solid rgb(190, 148, 148);
+  border-radius: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1,
+p {
+  font-family: Lato;
+  font-size: 1.3rem;
+  align-self: center;
+}
+
+input,
+button {
+  font-size: 1rem;
+}
+
+input {
+  height: 35px;
+  padding: 5px;
+  color: #666;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgb(70, 230, 56);
+}
+
+.login {
+  height: 35px;
+  color: white;
+  background-color: rgb(32, 160, 32);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: rgb(34, 177, 34);
+}
+
+.error {
+  color: tomato;
+  align-self: center;
+}
+
+.login:disabled {
+  background-color: rgb(0, 209, 0);
+}
+
+.logout {
+  height: 35px;
+  width: 100px;
+  margin-top: 10px;
+  color: white;
+  background-color: tomato;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
